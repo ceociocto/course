@@ -1,0 +1,47 @@
+// 变量列表可参考panjiachen的例子
+// https://github.com/PanJiaChen/custom-element-theme/blob/master/element-variables.scss
+
+/* 改变主题色变量 */
+$--color-primary: #3c6df0;
+$--color-text-placeholder: #777677 !default;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// Font
+$--color-text-primary: #323232;
+
+// Border
+$--border-color-base: #c0bfc0 !default;
+
+// Button
+$--button-border-radius: 0;
+$--button-default-border: #2D74DA;
+
+// Input
+$--input-border-radius: 0;
+
+// Card
+$--card-border-color: #c0bfc0;
+$--card-border-radius: 0;
+$--card-padding: .15rem;
+
+// Tag
+$--tag-padding: 0 .16rem;
+$--tag-border-radius: .12rem;
+$--tag-info-fill: #eaeaea;
+$--tag-info-border: #979797;
+
+// Collapse
+$--collapse-header-fill: #f7f7f7;
+$--collapse-content-fill: #f7f7f7;
+
+// Table
+$--table-header-color: #323232;
+$--table-header-background: #d8d8d8;
+
+// Tabs
+$--tab-header-color-active: #152935;
+$--tab-header-color: #152935;
+
+@import "~element-ui/packages/theme-chalk/src/index";
