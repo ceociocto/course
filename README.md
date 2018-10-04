@@ -1,5 +1,12 @@
 # vue-skeleton
 
+- vue-router
+- element-ui
+- echarts
+- v-charts
+- axios
+- node-sass sass-loader
+
 ## Project setup
 ```
 yarn install
