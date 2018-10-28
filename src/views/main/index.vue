@@ -1,60 +1,15 @@
 <template>
   <el-container class="main-container">
-    <el-header type="primary" height=".5rem" class="main-header-container">
-      <el-col class='logo-container' :span="8">
-        <el-col :span="2" class="splitter"></el-col>
-        <el-col :span="14" class="office">
-          <p>xxx</p>
-        </el-col>
-      </el-col>
-      
-      <el-col :span="6">
-      <el-tabs v-model="activeName" router="true" background-color="#545c64" class="tab-header" @tab-click="handleClick">
-        <el-tab-pane label="仪表盘" name="dashboard"></el-tab-pane>
-        <el-tab-pane label="列表" name="project-list"></el-tab-pane>
-      </el-tabs>
-       </el-col>
-       <el-col :span="11">
-            <el-row :gutter="28" type="flex" justify="end" align="middle" class="tool-bar-container">
-              <el-col :span="21">
-              <el-collapse-transition>
-                <div v-show="false">
-                  <el-input placeholder="请输入内容">
-                    <i slot="suffix" class="el-input__icon el-icon-search"></i>
-                  </el-input>
-                </div>
-              </el-collapse-transition>
-              </el-col>
-              <el-col :span="1">
-              <i class="el-icon-search light" @click="showSearch = !showSearch"></i>
-              </el-col>
-              <el-col :span="1">
-                <i class="el-icon-bell light"></i>
-              </el-col>
-              <el-col class="splitter-container" :span="1">
-                <div class="splitter"></div>
-              </el-col>
-            </el-row>
-       </el-col>
-        <el-col :span="4" class="menu-container">
-          <el-menu background-color="#1d3548" text-color="#fff">
-            <el-submenu index="1">
-              <template slot="title">
-                <i class="el-icon-setting"></i>
-                <span>{{username}}</span>
-              </template>
-              <el-menu-item-group>
-                <el-menu-item index="1-1" @click="logout">退出</el-menu-item>
-              </el-menu-item-group>
-            </el-submenu>
-          </el-menu>
-        </el-col>
+    <el-header>
+      <top-header></top-header>
     </el-header>
     <router-view></router-view>
   </el-container>
 </template>
 <script>
+import TopHeader from '@/components/TopHeader'
 export default {
+  components: {TopHeader},
   data() {
     return {
       showSearch: false,

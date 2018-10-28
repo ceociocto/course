@@ -21,6 +21,13 @@ body, #app {
   height: 100%;
   margin: 0;
   font-size: .14rem;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  max-width: 9rem;
+  flex: 1;
 }
 
 .truncate {
@@ -28,4 +35,5 @@ body, #app {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 </style>
