@@ -1,6 +1,11 @@
-# vue-start
+### 测试修改对比
 
-vue启动项目,包含下列常用依赖:
+- 测试新增内容
+  测试新增内容
+
+# vue-start
+- 测试修改内容
+vue启动项目,包含下列常用依赖 此处为修改内容:
 
 - vue-router
 - element-ui
@@ -9,7 +14,8 @@ vue启动项目,包含下列常用依赖:
 - axios
 - node-sass sass-loader
 
-增加了下列文件和目录
+- 测试删除内容，下面一行删除了
+
 
 ```
 src/
